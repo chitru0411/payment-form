@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        .p{
+            color: blue;
+            margin-left: 600px;
+            background-color: white;
+         display: inline;
+        }
+        form{
+            margin-top: 30px;
+            margin-left: 300px;
+        }
+        .a{
+            color: blue;
+            background-color: white;
+         display: inline-block;
+        }
+        label{
+            color: white;
+        }
+        ul{
+            background-color: white;
+            display: inline-block;
+            padding-inline-start: 0px;
+            padding-right: 30px;
+            margin-left: 50px;
+        }
+        .c{
+            color: blue;
+            float: right;
+        } 
+        textarea{
+            margin-left: 50px;
+        }   
+        .d{
+            color: blue;
+            background-color: white;
+         display: inline;
+        }      
+        
+    </style>
+</head>
+<body> 
+    <h1 class="p">Payment Form</h1>
+    <form method="get">
+        <h2 class="a">User Details</h2><br>
+       <label for="firstname">Name : </label>
+        <input type="text":id="firstname" value="enter your name"><br><br><br>
+
+        <label for="gender">Gender: </label> <br>
+        <ul>
+            <input type="radio" id="gender" name="gender" value="male"/><label for="gender" class="c">Male</label><br>
+            <input type="radio" id="gender" name="gender" value="female"/><label for="gender" class="c">Female</label>
+      
+        </ul> <br>
+        <label for="address">Address :</label><br>
+        <textarea name="textarea" id="Address" cols="60" rows="10"></textarea><br><br>
+<p>
+    <label for="firstname">Email : </label>
+    <input type="email":id="firstname" value="enter your email">
+    
+</p>
+
+        <p>
+            <label for="firstname">Pincode : </label>
+        <input type="number":id="firstname" value="enter your email">
+        </p>
+        <h1 class="d">Payment details</h1><br><br>
+
+
+       <p> 
+        <label for="cardtype">Card type : </label>
+        
+        <select name="cardname" id="cardtype">
+            <option value="">--select card type--</option>
+            <option value="visa">VISA</option>
+            <option value="">Rupay</option>
+            <option value="MasterCard">MasterCard</option>
+        </select>
+        </p>
+
+
+        <p>
+            <label for="cnum">Card number : </label>
+        <input type="password":id="cnum" value="1234-4567-1234">
+        </p>
+
+          <p>
+            <label for="exp">Expiration Date: </label>
+            <input type="date":id="exp">
+        </p>
+        <p><label for="firstname">CVV :</label>
+            <input type="password":id="firstname" value="***"></p>
+        <button>pay now</button>
+
+
+
+        
+    </form>
+</body>
+</html> 
